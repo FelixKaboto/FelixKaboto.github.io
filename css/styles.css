@@ -1,0 +1,263 @@
+@charset "UTF-8";
+
+/* CSS Variables */
+:root {
+    --primary: #64a19d;
+    --primary-dark: #4f837f;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    --white: #fff;
+    --black: #000;
+    --gray-100: #f8f9fa;
+    --gray-200: #e9ecef;
+    --gray-300: #dee2e6;
+    --gray-400: #ced4da;
+    --gray-500: #adb5bd;
+    --gray-600: #6c757d;
+    --gray-700: #495057;
+    --gray-800: #343a40;
+    --gray-900: #212529;
+    --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+/* Base Styles */
+body {
+    font-family: var(--font-family-sans-serif);
+    color: var(--gray-900);
+    background-color: var(--white);
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+/* Navigation */
+.navbar {
+    padding: 1rem 0;
+    background-color: var(--white);
+    box-shadow: 0 2px 4px rgba(0,0,0,.1);
+}
+
+.navbar-brand {
+    font-weight: 700;
+    color: var(--primary);
+}
+
+.nav-link {
+    font-weight: 500;
+    color: var(--gray-700);
+}
+
+.nav-link:hover {
+    color: var(--primary);
+}
+
+/* Masthead */
+.masthead {
+    padding: 8rem 0;
+    background: linear-gradient(to bottom, rgba(0,0,0,.7) 0%, rgba(0,0,0,.3) 100%), url("../assets/img/bg-masthead.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+}
+
+/* Integration Showcase Section */
+.integration-flow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem 0;
+}
+
+.flow-item {
+    flex: 1;
+    text-align: center;
+    padding: 1.5rem;
+    background: var(--white);
+    border-radius: 8px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.flow-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+.flow-arrow {
+    flex: 0 0 50px;
+    text-align: center;
+    color: var(--primary);
+    font-size: 1.5rem;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+}
+
+/* Cards */
+.card {
+    border: none;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Case Studies Section */
+.case-study-card img {
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Blog Section */
+.blog-card {
+    border: none;
+}
+
+/* Tools & Technologies Section */
+.tools-card i {
+    color: var(--primary);
+    transition: color 0.3s ease;
+}
+
+.tools-card:hover i {
+    color: var(--primary-dark);
+}
+
+/* Testimonials Section */
+.testimonial-card .blockquote-footer {
+    color: var(--primary);
+}
+
+/* Resources Section */
+.resource-card .btn-outline-primary {
+    border-color: var(--primary);
+    color: var(--primary);
+}
+
+.resource-card .btn-outline-primary:hover {
+    background-color: var(--primary);
+    color: var(--white);
+}
+
+/* Section Spacing */
+.projects-section {
+    padding: 5rem 0;
+}
+
+.projects-section h2 {
+    color: var(--gray-800);
+}
+
+.projects-section .text-muted {
+    color: var(--gray-600) !important;
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 5rem 0;
+    background-color: var(--gray-900);
+}
+
+.contact-section .card {
+    background-color: var(--gray-800);
+}
+
+.contact-section .text-primary {
+    color: var(--primary) !important;
+}
+
+/* Social Links */
+.social a {
+    color: var(--white);
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.social a:hover {
+    color: var(--primary);
+}
+
+/* Footer */
+.footer {
+    padding: 2rem 0;
+    background-color: var(--gray-900);
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: var(--primary);
+    border-color: var(--primary);
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-dark);
+    border-color: var(--primary-dark);
+}
+
+/* Form Controls */
+.form-control {
+    border-radius: 0.25rem;
+    border: 1px solid var(--gray-300);
+}
+
+.form-control:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 0.2rem rgba(100, 161, 157, 0.25);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .masthead {
+        padding: 4rem 0;
+    }
+    
+    .integration-flow {
+        flex-direction: column;
+    }
+    
+    .flow-item {
+        margin-bottom: 1rem;
+    }
+    
+    .flow-arrow {
+        transform: rotate(90deg);
+        margin: 1rem 0;
+    }
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.fade-in {
+    animation: fadeIn 0.5s ease-in;
+}
+
+.mt-lg-n4,
+.my-lg-n4 {
+  margin-top: -1.5rem !important;
+}
+
+.mr-lg-n4,
+.mx-lg-n4 {
+  margin-right: -1.5rem !important;
+} 
