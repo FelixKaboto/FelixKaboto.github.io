@@ -1,0 +1,207 @@
+/* Badge Styles */
+.badge {
+    display: inline-block;
+    padding: var(--spacing-xs) var(--spacing-sm);
+    font-size: 0.75rem;
+    font-weight: 500;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: var(--radius-sm);
+    transition: all var(--transition-fast);
+    text-decoration: none;
+    cursor: default;
+}
+
+.badge-primary {
+    background-color: var(--primary);
+    color: var(--text-white);
+}
+
+.badge-secondary {
+    background-color: var(--secondary);
+    color: var(--text-white);
+}
+
+.badge-accent {
+    background-color: var(--accent);
+    color: var(--text-white);
+}
+
+.badge-success {
+    background-color: var(--success);
+    color: var(--text-white);
+}
+
+.badge-warning {
+    background-color: var(--warning);
+    color: var(--text-primary);
+}
+
+.badge-error {
+    background-color: var(--error);
+    color: var(--text-white);
+}
+
+.badge-info {
+    background-color: var(--info);
+    color: var(--text-white);
+}
+
+.badge-outline {
+    background-color: transparent;
+    border: 1px solid var(--gray-300);
+    color: var(--text-secondary);
+}
+
+.badge-outline.badge-primary {
+    border-color: var(--primary);
+    color: var(--primary);
+}
+
+.badge-outline.badge-secondary {
+    border-color: var(--secondary);
+    color: var(--secondary);
+}
+
+.badge-outline.badge-accent {
+    border-color: var(--accent);
+    color: var(--accent);
+}
+
+.badge-outline.badge-success {
+    border-color: var(--success);
+    color: var(--success);
+}
+
+.badge-outline.badge-warning {
+    border-color: var(--warning);
+    color: var(--warning);
+}
+
+.badge-outline.badge-error {
+    border-color: var(--error);
+    color: var(--error);
+}
+
+.badge-outline.badge-info {
+    border-color: var(--info);
+    color: var(--info);
+}
+
+/* Badge Sizes */
+.badge-sm {
+    padding: calc(var(--spacing-xs) / 2) var(--spacing-xs);
+    font-size: 0.6875rem;
+}
+
+.badge-lg {
+    padding: var(--spacing-sm) var(--spacing-md);
+    font-size: 0.875rem;
+}
+
+/* Enhanced Badge Hover Effects */
+.badge:hover {
+    transform: translateY(-1px);
+    box-shadow: var(--shadow-1);
+}
+
+.badge-primary:hover {
+    background-color: var(--primary-dark);
+}
+
+.badge-secondary:hover {
+    background-color: var(--secondary-dark);
+}
+
+.badge-accent:hover {
+    background-color: var(--accent-dark);
+}
+
+.badge-outline:hover {
+    background-color: var(--gray-100);
+}
+
+.badge-outline.badge-primary:hover {
+    background-color: var(--primary-light);
+    color: var(--primary-dark);
+}
+
+.badge-outline.badge-secondary:hover {
+    background-color: rgba(52, 168, 83, 0.1);
+    color: var(--secondary-dark);
+}
+
+.badge-outline.badge-accent:hover {
+    background-color: rgba(234, 67, 53, 0.1);
+    color: var(--accent-dark);
+}
+
+/* Interactive Badges */
+.badge-interactive {
+    cursor: pointer;
+    user-select: none;
+}
+
+.badge-interactive:active {
+    transform: translateY(0);
+    box-shadow: none;
+}
+
+/* Badge Groups */
+.badge-group {
+    display: inline-flex;
+    gap: var(--spacing-xs);
+}
+
+.badge-group .badge {
+    margin: 0;
+}
+
+/* Status Badges */
+.badge-status {
+    position: relative;
+    padding-left: calc(var(--spacing-sm) + 8px);
+}
+
+.badge-status::before {
+    content: '';
+    position: absolute;
+    left: var(--spacing-xs);
+    top: 50%;
+    transform: translateY(-50%);
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: currentColor;
+}
+
+.badge-status.badge-success::before {
+    background-color: var(--success);
+}
+
+.badge-status.badge-warning::before {
+    background-color: var(--warning);
+}
+
+.badge-status.badge-error::before {
+    background-color: var(--error);
+}
+
+/* Animated Badges */
+.badge-pulse {
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(66, 133, 244, 0.7);
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(66, 133, 244, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(66, 133, 244, 0);
+    }
+}

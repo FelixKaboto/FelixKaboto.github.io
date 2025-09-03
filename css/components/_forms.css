@@ -1,0 +1,183 @@
+/* Form Styles */
+.form-group {
+    margin-bottom: var(--spacing-lg);
+}
+
+.form-label {
+    display: block;
+    margin-bottom: var(--spacing-sm);
+    font-weight: 500;
+    color: var(--text-primary);
+    font-size: 0.9375rem;
+}
+
+.form-input,
+.form-textarea,
+.form-select {
+    width: 100%;
+    padding: var(--spacing-md);
+    font-family: var(--font-family-secondary);
+    font-size: 0.9375rem;
+    border: 2px solid var(--gray-300);
+    border-radius: var(--radius-md);
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    transition: all var(--transition-fast);
+    line-height: 1.5;
+}
+
+.form-input:focus,
+.form-textarea:focus,
+.form-select:focus {
+    outline: none;
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px var(--primary-light);
+}
+
+.form-input:hover,
+.form-textarea:hover,
+.form-select:hover {
+    border-color: var(--gray-400);
+}
+
+.form-textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.form-select {
+    cursor: pointer;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='m6 8 4 4 4-4'/%3e%3c/svg%3e");
+    background-position: right var(--spacing-sm) center;
+    background-repeat: no-repeat;
+    background-size: 1.5em 1.5em;
+    padding-right: var(--spacing-xl);
+}
+
+/* Form Validation States */
+.form-input.error,
+.form-textarea.error,
+.form-select.error {
+    border-color: var(--error);
+}
+
+.form-input.error:focus,
+.form-textarea.error:focus,
+.form-select.error:focus {
+    box-shadow: 0 0 0 3px rgba(234, 67, 53, 0.1);
+}
+
+.form-input.success,
+.form-textarea.success,
+.form-select.success {
+    border-color: var(--success);
+}
+
+.form-input.success:focus,
+.form-textarea.success:focus,
+.form-select.success:focus {
+    box-shadow: 0 0 0 3px rgba(52, 168, 83, 0.1);
+}
+
+/* Form Help Text */
+.form-help {
+    margin-top: var(--spacing-xs);
+    font-size: 0.875rem;
+    color: var(--text-muted);
+}
+
+.form-error {
+    margin-top: var(--spacing-xs);
+    font-size: 0.875rem;
+    color: var(--error);
+}
+
+.form-success {
+    margin-top: var(--spacing-xs);
+    font-size: 0.875rem;
+    color: var(--success);
+}
+
+/* Form Checkbox and Radio */
+.form-check {
+    display: flex;
+    align-items: center;
+    margin-bottom: var(--spacing-sm);
+}
+
+.form-check-input {
+    margin-right: var(--spacing-sm);
+    width: 18px;
+    height: 18px;
+    accent-color: var(--primary);
+}
+
+.form-check-label {
+    font-size: 0.9375rem;
+    color: var(--text-secondary);
+    cursor: pointer;
+}
+
+/* Form Grid */
+.form-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--spacing-md);
+}
+
+.form-col {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Form Actions */
+.form-actions {
+    display: flex;
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-xl);
+    justify-content: flex-end;
+}
+
+.form-actions .btn {
+    min-width: 120px;
+}
+
+/* Form Loading State */
+.form-loading {
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+.form-loading .btn {
+    position: relative;
+    color: transparent;
+}
+
+.form-loading .btn::after {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border: 2px solid transparent;
+    border-top: 2px solid currentColor;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+/* Contact Form Specific */
+.contact-form {
+    background: var(--bg-primary);
+    padding: var(--spacing-xl);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-2);
+    transition: all var(--transition-normal);
+}
+
+.contact-form:hover {
+    box-shadow: var(--shadow-4);
+    transform: translateY(-2px);
+}
+
+.contact-form .form-group:last-child {
+    margin-bottom: 0;
+}

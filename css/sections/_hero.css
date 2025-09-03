@@ -1,0 +1,195 @@
+/* Hero Section */
+.hero {
+    min-height: 100vh;
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    padding-top: 80px;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('../assets/img/bg-masthead.jpg') center/cover;
+    opacity: 0.1;
+    z-index: 1;
+}
+
+.hero-container {
+    position: relative;
+    z-index: 2;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-md);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-3xl);
+    align-items: center;
+}
+
+.hero-content {
+    color: var(--text-white);
+}
+
+.hero-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 1.1;
+    margin: 0 0 var(--spacing-lg) 0;
+    letter-spacing: -0.02em;
+}
+
+.hero-subtitle {
+    font-size: 1.25rem;
+    line-height: 1.6;
+    margin: 0 0 var(--spacing-xl) 0;
+    opacity: 0.9;
+    font-weight: 400;
+}
+
+.hero-actions {
+    display: flex;
+    gap: var(--spacing-md);
+    flex-wrap: wrap;
+}
+
+.hero-actions .btn {
+    min-width: 140px;
+}
+
+.hero-actions .btn-primary {
+    background-color: var(--text-white);
+    color: var(--primary);
+    border-color: var(--text-white);
+}
+
+.hero-actions .btn-primary:hover {
+    background-color: var(--gray-100);
+    border-color: var(--gray-100);
+    color: var(--primary-dark);
+}
+
+.hero-actions .btn-secondary {
+    background-color: transparent;
+    color: var(--text-white);
+    border-color: var(--text-white);
+}
+
+.hero-actions .btn-secondary:hover {
+    background-color: var(--text-white);
+    color: var(--primary);
+}
+
+.hero-visual {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-md);
+    align-items: center;
+}
+
+.hero-skill {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: var(--radius-lg);
+    padding: var(--spacing-lg);
+    text-align: center;
+    backdrop-filter: blur(10px);
+    transition: all var(--transition-normal);
+    cursor: pointer;
+    color: var(--text-white);
+}
+
+.hero-skill:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-4px) scale(1.05);
+    box-shadow: var(--shadow-3);
+}
+
+.hero-skill-icon {
+    font-size: 2.5rem;
+    margin-bottom: var(--spacing-sm);
+    opacity: 0.9;
+}
+
+.hero-skill-name {
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 0;
+    opacity: 0.9;
+}
+
+/* Hero Responsive */
+@media (max-width: 768px) {
+    .hero {
+        min-height: 80vh;
+        padding-top: 60px;
+    }
+    
+    .hero-container {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-xl);
+        text-align: center;
+    }
+    
+    .hero-title {
+        font-size: 2.5rem;
+        line-height: 1.2;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.125rem;
+        line-height: 1.5;
+    }
+    
+    .hero-actions {
+        justify-content: center;
+    }
+    
+    .hero-visual {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--spacing-sm);
+    }
+    
+    .hero-skill {
+        padding: var(--spacing-md);
+    }
+    
+    .hero-skill-icon {
+        font-size: 2rem;
+    }
+    
+    .hero-skill-name {
+        font-size: 0.875rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-title {
+        font-size: 2rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+    
+    .hero-actions {
+        flex-direction: column;
+        gap: var(--spacing-sm);
+    }
+    
+    .hero-actions .btn {
+        width: 100%;
+        max-width: 280px;
+    }
+    
+    .hero-visual {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-sm);
+    }
+}

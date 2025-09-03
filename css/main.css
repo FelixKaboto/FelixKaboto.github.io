@@ -1,0 +1,33 @@
+/* 
+ * Felix Kaboto Portfolio - Main CSS
+ * Organized by component-based architecture
+ */
+
+/* Base Layer - Foundation */
+@import url('base/_variables.css');
+@import url('base/_reset.css');
+
+/* Components Layer - Reusable UI Elements */
+@import url('components/_navigation.css');
+@import url('components/_buttons.css');
+@import url('components/_forms.css');
+@import url('components/_cards.css');
+@import url('components/_badges.css');
+
+/* Sections Layer - Page-Specific Content */
+@import url('sections/_hero.css');
+
+/* Animations Layer - Transitions and Effects */
+@import url('animations/_transitions.css');
+
+/* Responsive Layer - Mobile and Tablet Styles */
+@import url('responsive/_mobile.css');
+
+/* 
+ * Note: Additional section files can be added here as needed:
+ * @import url('sections/_about.css');
+ * @import url('sections/_expertise.css');
+ * @import url('sections/_projects.css');
+ * @import url('sections/_contact.css');
+ * @import url('sections/_footer.css');
+ */
