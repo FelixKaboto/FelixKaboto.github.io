@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="description" content="Felix Kaboto - Martech Integration Developer specializing in CRM integrations, marketing automation, and advanced tracking setups." />
         <meta name="keywords" content="martech integration, crm integration, marketing automation, web developer, digital marketer, Cape Town, South Africa, Felix Kaboto" />
         <meta name="author" content="Felix Kaboto" />
@@ -13,6 +13,8 @@
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="google-site-verification" content="_ug74TRzrl8Dzi0VaERBi1fAymYV7t1qMIuoUwpOgqE" />
         <meta name="facebook-domain-verification" content="zz0k6e669kszhwdpq3q8rtl2txhgy1" />
+        
+        <!-- Structured Data -->
         <script type="application/ld+json">
         {
           "@context": "https://schema.org",
@@ -37,15 +39,19 @@
           }
         }
         </script>
+        
         <title>Felix Kaboto - Martech Integration Developer</title>
         <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
-        <!-- Font Awesome icons (free version)-->
-        <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
-       
-        <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
-        <!-- Core theme CSS (includes Bootstrap)-->
+        
+        <!-- Modern Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Google+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+        
+        <!-- Modern Icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        
+        <!-- Core CSS -->
         <link href="css/styles.css" rel="stylesheet" />
         
         <!-- Google Tag Manager -->
@@ -54,452 +60,329 @@
         j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
         })(window,document,'script','dataLayer','GTM-PPNBCZ8');</script>
-        <!-- End Google Tag Manager -->
     </head>
-    <body id="page-top">
+    <body>
         <!-- Skip to main content -->
         <a class="skip-link" href="#main-content">Skip to main content</a>
+        
         <!-- Google Tag Manager (noscript) -->
         <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PPNBCZ8"
         height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-        <!-- End Google Tag Manager (noscript) -->
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-            <div class="container">
-                <a class="navbar-brand js-scroll-trigger" href="#page-top">Felix Kaboto | Resume</a>
-                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation menu">
-                    Menu
-                    <i class="fas fa-bars"></i>
+        
+        <!-- Navigation -->
+        <nav class="navbar" id="mainNav">
+            <div class="nav-container">
+                <a class="nav-brand" href="#hero">Felix Kaboto</a>
+                <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                    <span class="hamburger"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#projects">Projects</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#case-studies">Case Studies</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#blog">Blog</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#tools">Tools</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#testimonials">Testimonials</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#resources">Resources</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contact</a></li>
-                    </ul>
-                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#expertise">Expertise</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
             </div>
         </nav>
-        <!-- Masthead-->
-        <header class="masthead" id="main-content">
-            <div class="container d-flex h-100 align-items-center">
-                <div class="mx-auto text-center">
-                    <h1 class="mx-auto my-0 text-uppercase">Martech Integration Developer</h1>
-                    <h2 class="text-white-50 mx-auto mt-2 mb-5">I build seamless integrations between marketing tools, CRMs, and analytics platforms to create powerful marketing automation systems.</h2>
-                    <a class="btn btn-primary js-scroll-trigger" href="#about">Learn More</a>
+        
+        <!-- Hero Section -->
+        <section class="hero" id="hero">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <h1 class="hero-title">Martech Integration Developer</h1>
+                    <p class="hero-subtitle">I build seamless integrations between marketing tools, CRMs, and analytics platforms to create powerful marketing automation systems.</p>
+                    <div class="hero-actions">
+                        <a class="btn btn-primary" href="#about">Learn More</a>
+                        <a class="btn btn-secondary" href="#contact">Get in Touch</a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="tech-stack">
+                        <div class="tech-item">CRM</div>
+                        <div class="tech-item">Analytics</div>
+                        <div class="tech-item">Automation</div>
+                        <div class="tech-item">Integration</div>
+                    </div>
                 </div>
             </div>
-        </header>
+        </section>
+        
         <!-- Main Content -->
-        <main>
+        <main id="main-content">
             <!-- About Section -->
-            <section class="about-section text-center" id="about">
+            <section class="section about-section" id="about">
                 <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 mx-auto">
-                          <h2 class="text-white mb-4">About Me</h2>
-                            <p class="text-white-50">
-                                A Martech Integration Developer with expertise in connecting marketing technologies and building automated workflows.
-                                I specialize in CRM integrations, marketing automation, and advanced tracking setups for both web and mobile applications.
-                                Passionate about creating seamless user experiences through technology integration and data-driven marketing strategies.
-                            </p>
+                    <div class="section-header">
+                        <h2 class="section-title">About Me</h2>
+                        <p class="section-subtitle">Passionate about connecting technologies</p>
+                    </div>
+                    <div class="about-content">
+                        <div class="about-text">
+                            <p>A Martech Integration Developer with expertise in connecting marketing technologies and building automated workflows. I specialize in CRM integrations, marketing automation, and advanced tracking setups for both web and mobile applications.</p>
+                            <p>Passionate about creating seamless user experiences through technology integration and data-driven marketing strategies.</p>
+                        </div>
+                        <div class="about-stats">
+                            <div class="stat-item">
+                                <span class="stat-number">5+</span>
+                                <span class="stat-label">Years Experience</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">50+</span>
+                                <span class="stat-label">Integrations Built</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">100%</span>
+                                <span class="stat-label">Client Satisfaction</span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </section>
+            
+            <!-- Expertise Section -->
+            <section class="section expertise-section" id="expertise">
+                <div class="container">
+                    <div class="section-header">
+                        <h2 class="section-title">Expertise</h2>
+                        <p class="section-subtitle">Core skills and technologies</p>
+                    </div>
+                    
+                    <!-- Integration Flow -->
+                    <div class="integration-flow">
+                        <div class="flow-item">
+                            <div class="flow-icon">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <h3>User Action</h3>
+                            <p>Website or App Interaction</p>
+                        </div>
+                        <div class="flow-arrow">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                        <div class="flow-item">
+                            <div class="flow-icon">
+                                <i class="fas fa-tags"></i>
+                            </div>
+                            <h3>Tag Manager</h3>
+                            <p>Event Tracking</p>
+                        </div>
+                        <div class="flow-arrow">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                        <div class="flow-item">
+                            <div class="flow-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <h3>Analytics</h3>
+                            <p>Data Collection</p>
+                        </div>
+                        <div class="flow-arrow">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                        <div class="flow-item">
+                            <div class="flow-icon">
+                                <i class="fas fa-robot"></i>
+                            </div>
+                            <h3>Automation</h3>
+                            <p>Workflow Trigger</p>
+                        </div>
+                        <div class="flow-arrow">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                        <div class="flow-item">
+                            <div class="flow-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <h3>CRM</h3>
+                            <p>User Profile Update</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Skills Grid -->
+                    <div class="skills-grid">
+                        <div class="skills-category">
+                            <h3>Integration Expertise</h3>
+                            <ul class="skills-list">
+                                <li>CRM Integrations (Salesforce, HubSpot, Zoho)</li>
+                                <li>Marketing Automation (Marketo, Pardot, Mailchimp)</li>
+                                <li>Analytics & Tracking (Google Analytics 4, Adobe Analytics)</li>
+                                <li>Tag Management (Google Tag Manager, Tealium)</li>
+                                <li>CDP & Data Platforms (Segment, mParticle)</li>
+                            </ul>
+                        </div>
+                        <div class="skills-category">
+                            <h3>Technical Skills</h3>
+                            <ul class="skills-list">
+                                <li>JavaScript, Python, Node.js</li>
+                                <li>REST APIs, Webhooks, OAuth</li>
+                                <li>SQL, NoSQL Databases</li>
+                                <li>AWS, Azure Cloud Services</li>
+                                <li>CI/CD, Docker, Kubernetes</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
             <!-- Projects Section -->
-            <section class="projects-section bg-light" id="projects">
+            <section class="section projects-section" id="projects">
                 <div class="container">
-                    <!-- Integration Showcase -->
-                    <div class="row mb-5">
-                        <div class="col-lg-12 text-center">
-                            <h2 class="mb-4">Integration Showcase</h2>
-                            <div class="integration-flow">
-                                <div class="flow-item">
-                                    <i class="fas fa-user fa-3x mb-3"></i>
-                                    <h4>User Action</h4>
-                                    <p>Website or App Interaction</p>
-                                </div>
-                                <div class="flow-arrow">
-                                    <i class="fas fa-arrow-right"></i>
-                                </div>
-                                <div class="flow-item">
-                                    <i class="fas fa-tags fa-3x mb-3"></i>
-                                    <h4>Tag Manager</h4>
-                                    <p>Event Tracking</p>
-                                </div>
-                                <div class="flow-arrow">
-                                    <i class="fas fa-arrow-right"></i>
-                                </div>
-                                <div class="flow-item">
-                                    <i class="fas fa-chart-line fa-3x mb-3"></i>
-                                    <h4>Analytics</h4>
-                                    <p>Data Collection</p>
-                                </div>
-                                <div class="flow-arrow">
-                                    <i class="fas fa-arrow-right"></i>
-                                </div>
-                                <div class="flow-item">
-                                    <i class="fas fa-robot fa-3x mb-3"></i>
-                                    <h4>Automation</h4>
-                                    <p>Workflow Trigger</p>
-                                </div>
-                                <div class="flow-arrow">
-                                    <i class="fas fa-arrow-right"></i>
-                                </div>
-                                <div class="flow-item">
-                                    <i class="fas fa-envelope fa-3x mb-3"></i>
-                                    <h4>CRM</h4>
-                                    <p>User Profile Update</p>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="section-header">
+                        <h2 class="section-title">Featured Projects</h2>
+                        <p class="section-subtitle">Real-world examples of successful Martech integrations</p>
                     </div>
-                    <!-- Skills Section -->
-                    <div class="row mb-5">
-                        <div class="col-lg-12">
-                            <div class="card">
-                                <div class="card-header">
-                                    <h3 class="mb-0">Skills & Expertise</h3>
-                                </div>
-                                <div class="card-body">
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <h4>Integration Expertise</h4>
-                                            <ul class="list-unstyled">
-                                                <li><i class="fas fa-check text-primary mr-2"></i>CRM Integrations (Salesforce, HubSpot, Zoho)</li>
-                                                <li><i class="fas fa-check text-primary mr-2"></i>Marketing Automation (Marketo, Pardot, Mailchimp)</li>
-                                                <li><i class="fas fa-check text-primary mr-2"></i>Analytics & Tracking (Google Analytics 4, Adobe Analytics)</li>
-                                                <li><i class="fas fa-check text-primary mr-2"></i>Tag Management (Google Tag Manager, Tealium)</li>
-                                                <li><i class="fas fa-check text-primary mr-2"></i>CDP & Data Platforms (Segment, mParticle)</li>
-                                            </ul>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <h4>Technical Skills</h4>
-                                            <ul class="list-unstyled">
-                                                <li><i class="fas fa-check text-primary mr-2"></i>JavaScript, Python, Node.js</li>
-                                                <li><i class="fas fa-check text-primary mr-2"></i>REST APIs, Webhooks, OAuth</li>
-                                                <li><i class="fas fa-check text-primary mr-2"></i>SQL, NoSQL Databases</li>
-                                                <li><i class="fas fa-check text-primary mr-2"></i>AWS, Azure Cloud Services</li>
-                                                <li><i class="fas fa-check text-primary mr-2"></i>CI/CD, Docker, Kubernetes</li>
-                                            </ul>
-                                        </div>
-                                    </div>
+                    
+                    <div class="projects-grid">
+                        <article class="project-card">
+                            <div class="project-content">
+                                <h3 class="project-title">CRM Integration Success</h3>
+                                <p class="project-description">Increased lead conversion by 40% through seamless CRM integration and automated lead scoring workflows.</p>
+                                <div class="project-tech">
+                                    <span class="tech-tag">Salesforce</span>
+                                    <span class="tech-tag">HubSpot</span>
+                                    <span class="tech-tag">Automation</span>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    <!-- Project Showcase -->
-                    <div class="row">
-                        <div class="col-lg-6 mb-4">
-                            <div class="card h-100">
-                                <img class="card-img-top" src="assets/img/demo-image-01.jpg" alt="Loit Logo Design Project">
-                                <div class="card-body">
-                                    <h4 class="card-title">Loit Logo</h4>
-                                    <p class="card-text">Designed the logo for this online shopping platform.</p>
+                        </article>
+                        
+                        <article class="project-card">
+                            <div class="project-content">
+                                <h3 class="project-title">Marketing Automation Platform</h3>
+                                <p class="project-description">Built comprehensive marketing automation workflows that reduced manual work by 60% and improved campaign performance.</p>
+                                <div class="project-tech">
+                                    <span class="tech-tag">Marketo</span>
+                                    <span class="tech-tag">Analytics</span>
+                                    <span class="tech-tag">Workflows</span>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-lg-6 mb-4">
-                            <div class="card h-100">
-                                <img class="card-img-top" src="assets/img/demo-image-02.jpg" alt="Ydigital Agency Project">
-                                <div class="card-body">
-                                    <h4 class="card-title">Ydigital Agency</h4>
-                                    <p class="card-text">Designed <a href="https://ydigitalagency.com/">Ydigital Agency</a>, Social Media pages, all designs on site, intro video including local SEO for the firm.</p>
+                        </article>
+                        
+                        <article class="project-card">
+                            <div class="project-content">
+                                <h3 class="project-title">Unified Analytics Dashboard</h3>
+                                <p class="project-description">Created a unified data view across multiple platforms with real-time reporting and automated insights.</p>
+                                <div class="project-tech">
+                                    <span class="tech-tag">GA4</span>
+                                    <span class="tech-tag">Adobe Analytics</span>
+                                    <span class="tech-tag">Data Studio</span>
                                 </div>
                             </div>
-                        </div>
+                        </article>
+                        
+                        <article class="project-card">
+                            <div class="project-content">
+                                <h3 class="project-title">E-commerce Integration</h3>
+                                <p class="project-description">Connected e-commerce platforms with marketing tools for personalized customer experiences and automated campaigns.</p>
+                                <div class="project-tech">
+                                    <span class="tech-tag">Shopify</span>
+                                    <span class="tech-tag">Klaviyo</span>
+                                    <span class="tech-tag">Personalization</span>
+                                </div>
+                            </div>
+                        </article>
                     </div>
                 </div>
             </section>
-            <!-- Case Studies Section -->
-            <section class="projects-section bg-light" id="case-studies">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-12 text-center">
-                            <h2 class="mb-4">Case Studies</h2>
-                            <p class="text-muted mb-5">Real-world examples of successful Martech integrations</p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-4 mb-4">
-                            <div class="card h-100">
-                                <img src="assets/img/case-study-1.jpg" class="card-img-top" alt="CRM Integration Case Study">
-                                <div class="card-body">
-                                    <h5 class="card-title">CRM Integration Success</h5>
-                                    <p class="card-text">How we increased lead conversion by 40% through seamless CRM integration.</p>
-                                    <a href="#" class="btn btn-primary">Read Case Study</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 mb-4">
-                            <div class="card h-100">
-                                <img src="assets/img/case-study-2.jpg" class="card-img-top" alt="Marketing Automation Case Study">
-                                <div class="card-body">
-                                    <h5 class="card-title">Marketing Automation</h5>
-                                    <p class="card-text">Implementing automated workflows that reduced manual work by 60%.</p>
-                                    <a href="#" class="btn btn-primary">Read Case Study</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 mb-4">
-                            <div class="card h-100">
-                                <img src="assets/img/case-study-3.jpg" class="card-img-top" alt="Analytics Integration Case Study">
-                                <div class="card-body">
-                                    <h5 class="card-title">Analytics Integration</h5>
-                                    <p class="card-text">Creating a unified data view across multiple platforms.</p>
-                                    <a href="#" class="btn btn-primary">Read Case Study</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- Blog Section -->
-            <section class="projects-section bg-light" id="blog">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-12 text-center">
-                            <h2 class="mb-4">Latest Articles</h2>
-                            <p class="text-muted mb-5">Insights and best practices in Martech integration</p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6 mb-4">
-                            <div class="card h-100">
-                                <div class="card-body">
-                                    <h5 class="card-title">Best Practices for CRM Integration</h5>
-                                    <p class="card-text">Learn the essential steps to ensure successful CRM integration projects.</p>
-                                    <a href="#" class="btn btn-outline-primary">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 mb-4">
-                            <div class="card h-100">
-                                <div class="card-body">
-                                    <h5 class="card-title">Marketing Automation Workflows</h5>
-                                    <p class="card-text">Discover how to create effective marketing automation workflows.</p>
-                                    <a href="#" class="btn btn-outline-primary">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- Tools & Technologies Section -->
-            <section class="projects-section bg-light" id="tools">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-12 text-center">
-                            <h2 class="mb-4">Tools & Technologies</h2>
-                            <p class="text-muted mb-5">The Martech stack I work with</p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-3 col-sm-6 mb-4">
-                            <div class="card h-100">
-                                <div class="card-body text-center">
-                                    <i class="fab fa-salesforce fa-3x mb-3 text-primary"></i>
-                                    <h5>Salesforce</h5>
-                                    <p class="small">CRM Integration</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6 mb-4">
-                            <div class="card h-100">
-                                <div class="card-body text-center">
-                                    <i class="fab fa-google fa-3x mb-3 text-primary"></i>
-                                    <h5>Google Analytics</h5>
-                                    <p class="small">Analytics & Tracking</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6 mb-4">
-                            <div class="card h-100">
-                                <div class="card-body text-center">
-                                    <i class="fas fa-tags fa-3x mb-3 text-primary"></i>
-                                    <h5>Google Tag Manager</h5>
-                                    <p class="small">Tag Management</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6 mb-4">
-                            <div class="card h-100">
-                                <div class="card-body text-center">
-                                    <i class="fas fa-robot fa-3x mb-3 text-primary"></i>
-                                    <h5>Marketing Automation</h5>
-                                    <p class="small">Workflow Automation</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- Testimonials Section -->
-            <section class="projects-section bg-light" id="testimonials">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-12 text-center">
-                            <h2 class="mb-4">Client Testimonials</h2>
-                            <p class="text-muted mb-5">What my clients say about my work</p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-4 mb-4">
-                            <div class="card h-100">
-                                <div class="card-body">
-                                    <blockquote class="blockquote mb-0">
-                                        <p>"Felix's expertise in Martech integration helped us streamline our marketing operations significantly."</p>
-                                        <footer class="blockquote-footer">John Smith, <cite>Marketing Director</cite></footer>
-                                    </blockquote>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 mb-4">
-                            <div class="card h-100">
-                                <div class="card-body">
-                                    <blockquote class="blockquote mb-0">
-                                        <p>"The integration solutions provided were robust and scalable, exactly what we needed."</p>
-                                        <footer class="blockquote-footer">Sarah Johnson, <cite>CTO</cite></footer>
-                                    </blockquote>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 mb-4">
-                            <div class="card h-100">
-                                <div class="card-body">
-                                    <blockquote class="blockquote mb-0">
-                                        <p>"Working with Felix was a game-changer for our marketing automation strategy."</p>
-                                        <footer class="blockquote-footer">Michael Brown, <cite>CEO</cite></footer>
-                                    </blockquote>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- Resources Section -->
-            <section class="projects-section bg-light" id="resources">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-12 text-center">
-                            <h2 class="mb-4">Resources</h2>
-                            <p class="text-muted mb-5">Helpful guides and templates for Martech integration</p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-4 mb-4">
-                            <div class="card h-100">
-                                <div class="card-body">
-                                    <h5 class="card-title">Integration Checklist</h5>
-                                    <p class="card-text">A comprehensive checklist for successful Martech integration projects.</p>
-                                    <a href="#" class="btn btn-outline-primary">Download</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 mb-4">
-                            <div class="card h-100">
-                                <div class="card-body">
-                                    <h5 class="card-title">API Documentation</h5>
-                                    <p class="card-text">Best practices for API integration and documentation.</p>
-                                    <a href="#" class="btn btn-outline-primary">Download</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 mb-4">
-                            <div class="card h-100">
-                                <div class="card-body">
-                                    <h5 class="card-title">Workflow Templates</h5>
-                                    <p class="card-text">Ready-to-use marketing automation workflow templates.</p>
-                                    <a href="#" class="btn btn-outline-primary">Download</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+            
             <!-- Contact Section -->
-            <section class="contact-section bg-black" id="contact">
+            <section class="section contact-section" id="contact">
                 <div class="container">
-                    <div class="row">
-                        <div class="col-md-4 mb-3 mb-md-0">
-                            <div class="card py-4 h-100">
-                                <div class="card-body text-center">
-                                    <i class="fas fa-map-marked-alt text-primary mb-2"></i>
-                                    <h4 class="text-uppercase m-0">Address</h4>
-                                    <hr class="my-4" />
-                                    <div class="small text-black-50">Cape Town, South Africa</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 mb-3 mb-md-0">
-                            <div class="card py-4 h-100">
-                                <div class="card-body text-center">
-                                    <i class="fas fa-envelope-open-text text-primary mb-2"></i>
-                                    <h4 class="text-uppercase m-0">Email</h4>
-                                    <hr class="my-4" />
-                                    <div class="small text-black-50"><a href="mailto:felixkaboto@gmail.com" target="_blank">felixkaboto@gmail.com</a></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 mb-3 mb-md-0">
-                            <div class="card py-4 h-100">
-                                <div class="card-body text-center">
-                                    <i class="fas fa-mobile-alt text-primary mb-2"></i>
-                                    <h4 class="text-uppercase m-0">Phone</h4>
-                                    <hr class="my-4" />
-                                    <div class="small text-black-50">+27 (78) 171-8569</div>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="section-header">
+                        <h2 class="section-title">Get In Touch</h2>
+                        <p class="section-subtitle">Let's discuss your next project</p>
                     </div>
-                    <!-- Contact Form -->
-                    <div class="row mt-5">
-                        <div class="col-lg-8 mx-auto">
-                            <form id="contactForm" class="bg-white p-4 rounded">
-                                <div class="form-group">
-                                    <label for="name">Name</label>
-                                    <input type="text" class="form-control" id="name" required>
+                    
+                    <div class="contact-content">
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
                                 </div>
-                                <div class="form-group">
-                                    <label for="email">Email</label>
-                                    <input type="email" class="form-control" id="email" required>
+                                <div class="contact-details">
+                                    <h3>Location</h3>
+                                    <p>Cape Town, South Africa</p>
                                 </div>
-                                <div class="form-group">
-                                    <label for="message">Message</label>
-                                    <textarea class="form-control" id="message" rows="5" required></textarea>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-envelope"></i>
                                 </div>
-                                <button type="submit" class="btn btn-primary">Send Message</button>
-                            </form>
+                                <div class="contact-details">
+                                    <h3>Email</h3>
+                                    <p><a href="mailto:felixkaboto@gmail.com">felixkaboto@gmail.com</a></p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h3>Phone</h3>
+                                    <p>+27 (78) 171-8569</p>
+                                </div>
+                            </div>
                         </div>
+                        
+                        <form class="contact-form" id="contactForm">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="5" required placeholder="Tell me about your project or how I can help..."></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                        </form>
                     </div>
-                    <div class="social d-flex justify-content-center mt-4">
-                        <a class="mx-2" href="https://twitter.com/intent/user?screen_name=FelixKaboto" aria-label="Follow me on Twitter"><i class="fab fa-twitter"></i></a>
-                        <a class="mx-2" href="https://www.facebook.com/felixkaboto" aria-label="Follow me on Facebook"><i class="fab fa-facebook-f"></i></a>
-                        <a class="mx-2" href="https://www.linkedin.com/in/felix-kaboto" aria-label="Connect with me on LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                        <a class="mx-2" href="https://github.com/FelixKaboto" aria-label="View my GitHub profile"><i class="fab fa-github"></i></a>
+                    
+                    <!-- Social Links -->
+                    <div class="social-links">
+                        <a href="https://twitter.com/intent/user?screen_name=FelixKaboto" aria-label="Follow me on Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://www.facebook.com/felixkaboto" aria-label="Follow me on Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/felix-kaboto" aria-label="Connect with me on LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com/FelixKaboto" aria-label="View my GitHub profile">
+                            <i class="fab fa-github"></i>
+                        </a>
                     </div>
                 </div>
             </section>
         </main>
-        <!-- Footer-->
-        <footer class="footer bg-black small text-center text-white-50">
+        
+        <!-- Footer -->
+        <footer class="footer">
             <div class="container">
-                <p class="mb-0">Copyright © Felix Kaboto 2024</p>
+                <p>&copy; 2024 Felix Kaboto. All rights reserved.</p>
             </div>
         </footer>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Third party plugin JS-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-        <!-- Core theme JS-->
+        
+        <!-- Modern JavaScript -->
         <script src="js/scripts.js"></script>
+        
+        <!-- Mailchimp -->
         <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/02aa296f80adee0f3618f407d/138b7231858a026de4b5128c3.js");</script>
     </body>
 </html>
